@@ -14,13 +14,13 @@ alias la='ls -la'
 alias diff='diff -b -w -B'
 
 # vim
-which vim > /dev/null
+which "vim" > /dev/null
 if [ $? -eq 0 ]; then
   alias vi='vim'
 fi
 
 # emacs
-which emacs > /dev/null
+which "emacs" > /dev/null
 if [ $? -eq 0 ]; then
   alias wq='emacs'
 fi
@@ -31,7 +31,7 @@ if [ -f /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl ]; th
 fi
 
 # vagrant
-which vagrant > /dev/null
+which "vagrant" > /dev/null
 if [ $? -eq 0 ]; then
   alias vadestroy='vagrant destroy'
   alias vahalt='vagrant halt'
@@ -55,7 +55,7 @@ if [ -d ~/bin ]; then
 fi
 
 # homebrew
-which brew > /dev/null
+which "brew" > /dev/null
 if [ $? -eq 0 ]; then
   export PATH=$(brew --prefix)/bin:$PATH
 fi
