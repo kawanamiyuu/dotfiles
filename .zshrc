@@ -71,8 +71,8 @@ if [ $? -eq 0 ]; then
 fi
 
 # Sublime Text for Mac
-if [ -f /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl ]; then
-  alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+if [ -f /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ]; then
+  alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 fi
 
 # vagrant
