@@ -47,11 +47,11 @@ plugins=(git brew vagrant)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/bin:/Users/Yuu/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+#export PATH=$PATH:/usr/local/bin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # ======================================================================
 # .bashrc で定義していたaliasやexportの設定をコピー
-# .oh-my-zsh/custom/ とかにまとめるといいんだけど、管理するファイルが
+# ~/.oh-my-zsh/custom/ とかにまとめるといいんだけど、管理するファイルが
 # 増えると面倒なのでここに書いておく
 # ======================================================================
 alias ll='ls -l'
@@ -88,17 +88,17 @@ if [ $? -eq 0 ]; then
 fi
 
 # color setting
-export CLICOLOR=1
-export LSCOLORS=gxfxcxdxbxegedabagacad
+#export CLICOLOR=1
+#export LSCOLORS=gxfxcxdxbxegedabagacad
 
-# # ~/bin
-# if [ -d ~/bin ]; then
-#   export PATH=~/bin:$PATH
-# fi
-# 
-# # homebrew
-# which "brew" > /dev/null
-# if [ $? -eq 0 ]; then
-#   export PATH=$(brew --prefix)/bin:$PATH
-# fi
+# ~/bin
+if [ -d ~/bin ]; then
+  export PATH=~/bin:$PATH
+fi
+
+# homebrew
+which "brew" > /dev/null
+if [ $? -eq 0 ]; then
+  export PATH=$(brew --prefix)/bin:$PATH
+fi
 
