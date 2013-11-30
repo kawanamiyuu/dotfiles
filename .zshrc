@@ -78,13 +78,13 @@ fi
 # vagrant
 which "vagrant" > /dev/null
 if [ $? -eq 0 ]; then
-  alias vadestroy='vagrant destroy'
-  alias vahalt='vagrant halt'
-  alias vaprovision='vagrant provision'
+  alias vadestroy='vagrant destroy; vagrant status'
+  alias vahalt='vagrant halt; vagrant status'
+  alias vaprovision='vagrant provision; vagrant status'
 #  alias vasandbox='vagrant sandbox'
   alias vassh='vagrant ssh'
   alias vastatus='vagrant status'
-  alias vaup='vagrant up'
+  alias vaup='vagrant up; vagrant status'
 fi
 
 # color setting
