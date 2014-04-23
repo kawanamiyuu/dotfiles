@@ -1,11 +1,20 @@
 install wget
 install tree
+install git
+
+# PHP
+tap homebrew/dupes
+tap homebrew/versions
+tap homebrew/homebrew-php
+install php55
+install php55-xdebug
+install composer
 
 # install brew-cask
 tap phinze/homebrew-cask
 install brew-cask
 
-# install R
+# R
 #cask install xquartz
 #tap homebrew/science
 #install r

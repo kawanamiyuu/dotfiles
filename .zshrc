@@ -78,8 +78,9 @@ fi
 # vagrant
 which "vagrant" > /dev/null
 if [ $? -eq 0 ]; then
-  alias vadestroy='vagrant destroy; vagrant status'
+  alias vadestroy='vagrant destroy --force; vagrant status'
   alias vahalt='vagrant halt; vagrant status'
+  alias vahds='vagrant halt; vagrant destroy --force; vagrant status'
   alias vaprovision='vagrant provision'
 #  alias vasandbox='vagrant sandbox'
   alias vassh='vagrant ssh'
