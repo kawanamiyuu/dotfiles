@@ -8,6 +8,7 @@ tap homebrew/versions
 tap homebrew/homebrew-php
 install php55
 install php55-xdebug
+install phpunit
 install composer
 
 # install brew-cask
