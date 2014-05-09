@@ -4,7 +4,6 @@ install git
 
 # PHP
 tap homebrew/dupes
-tap homebrew/versions
 tap homebrew/homebrew-php
 install php55
 install php55-xdebug
