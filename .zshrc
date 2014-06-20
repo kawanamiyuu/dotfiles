@@ -56,7 +56,8 @@ source $ZSH/oh-my-zsh.sh
 # ======================================================================
 alias ll='ls -l'
 alias la='ls -la'
-alias diff='diff -b -w -B'
+alias diff='colordiff -b -w -B -u'
+alias du1='du -d 1'
 
 # vim
 which "vim" > /dev/null
