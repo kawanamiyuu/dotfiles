@@ -23,3 +23,4 @@ install brew-cask
 cask install intellij-idea
 cask install virtualbox
 cask install vagrant
+cask install skitch
