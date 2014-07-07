@@ -2,6 +2,7 @@ install wget
 install tree
 install git
 install colordiff
+install tig
 
 # PHP
 tap homebrew/dupes
