@@ -99,8 +99,9 @@ if [ -d ~/bin ]; then
 fi
 
 # homebrew
-which "brew" > /dev/null
-if [ $? -eq 0 ]; then
-  export PATH=$(brew --prefix)/bin:$PATH
-fi
+export PATH=$(brew --prefix)/bin:$PATH
 
+# terminal-notifier & zsh-notify
+source ~/.zsh.d/zsh-notify/notify.plugin.zsh
+export SYS_NOTIFIER=$(brew --prefix)/bin/terminal-notifier
+export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10

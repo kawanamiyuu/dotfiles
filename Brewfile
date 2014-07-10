@@ -3,6 +3,7 @@ install tree
 install git
 install colordiff
 install tig
+install terminal-notifier
 
 # PHP
 tap homebrew/dupes
