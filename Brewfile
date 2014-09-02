@@ -13,6 +13,9 @@ install php55-xdebug
 install phpunit
 install composer
 
+# Node.js (with npm)
+install node
+
 # install brew-cask
 tap phinze/homebrew-cask
 install brew-cask
