@@ -5,6 +5,10 @@ install colordiff
 install tig
 install terminal-notifier
 
+# peco
+tap peco/peco
+install peco
+
 # PHP
 tap homebrew/dupes
 tap homebrew/homebrew-php
