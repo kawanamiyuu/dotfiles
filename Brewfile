@@ -9,6 +9,9 @@ install terminal-notifier
 tap peco/peco
 install peco
 
+# Heroku
+install heroku-toolbelt
+
 # PHP
 tap homebrew/dupes
 tap homebrew/homebrew-php
