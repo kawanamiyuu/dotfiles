@@ -1,8 +1,9 @@
 install wget
 install tree
 install git
-install colordiff
 install tig
+install hub
+install colordiff
 install terminal-notifier
 
 # peco
