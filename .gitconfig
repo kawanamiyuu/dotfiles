@@ -8,10 +8,14 @@
 [color]
   ui = auto
 
+[merge]
+  ff = false
+
 [alias]
   st = status
   co = checkout
   cm = commit
+  mg = merge
   tree = log --graph --date=short --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
   logg = log --stat --decorate=short --pretty=format:'%C(yellow)%h %Cgreen%cr %Cblue%cn%Cred%d %Creset%s %C(cyan)%b'
 
