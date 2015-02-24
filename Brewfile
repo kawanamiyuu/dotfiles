@@ -38,4 +38,4 @@ cask install virtualbox
 cask install vagrant
 cask install skitch
 cask install shiftit
-
+cask install slack
