@@ -19,6 +19,7 @@ tap homebrew/homebrew-php
 install php55
 install php55-xdebug
 install phpunit
+install php-code-sniffer
 install composer
 
 # Node.js (with npm)
