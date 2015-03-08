@@ -33,6 +33,7 @@ install brew-cask
 #tap homebrew/science
 #install r
 
+cask install java
 cask install intellij-idea
 cask install virtualbox
 cask install vagrant
