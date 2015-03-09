@@ -20,6 +20,7 @@ install php55
 install php55-xdebug
 install phpunit
 install php-code-sniffer
+install php-cs-fixer
 install composer
 
 # Node.js (with npm)
