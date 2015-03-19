@@ -36,6 +36,7 @@ install brew-cask
 #install r
 
 cask install atom
+cask install cheatsheet
 cask install java
 cask install intellij-idea
 cask install virtualbox
