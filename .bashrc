@@ -49,6 +49,8 @@ fi
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
+export PATH=/usr/local/sbin:$PATH
+
 # ~/bin
 if [ -d ~/bin ]; then
   export PATH=~/bin:$PATH

@@ -47,7 +47,7 @@ plugins=(brew brew-cask git vagrant node npm bower composer heroku)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-#export PATH=$PATH:/usr/local/bin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$(brew --prefix)/bin:/usr/local/bin:~/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
 # ======================================================================
 # .bashrc で定義していたaliasやexportの設定をコピー
@@ -92,14 +92,6 @@ fi
 # color setting
 #export CLICOLOR=1
 #export LSCOLORS=gxfxcxdxbxegedabagacad
-
-# ~/bin
-if [ -d ~/bin ]; then
-  export PATH=~/bin:$PATH
-fi
-
-# homebrew
-export PATH=$(brew --prefix)/bin:$PATH
 
 # terminal-notifier & zsh-notify
 source ~/.zsh.d/zsh-notify/notify.plugin.zsh
