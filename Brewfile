@@ -1,6 +1,6 @@
 install wget
 install tree
-install git
+install git --with-brewed-curl --with-brewed-openssl
 install tig
 install hub
 install colordiff
