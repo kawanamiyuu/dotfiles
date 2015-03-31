@@ -1,5 +1,6 @@
 install wget
 install tree
+install go --with-cc-common
 install git --with-brewed-curl --with-brewed-openssl
 install tig
 install hub
