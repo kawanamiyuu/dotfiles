@@ -36,6 +36,7 @@ install brew-cask
 #tap homebrew/science
 #install r
 
+cask install appcleaner
 cask install atom
 cask install cheatsheet
 cask install java
