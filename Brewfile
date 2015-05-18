@@ -39,6 +39,7 @@ install brew-cask
 cask install appcleaner
 cask install atom
 cask install cheatsheet
+cask install cyberduck
 cask install java
 cask install intellij-idea
 cask install virtualbox
