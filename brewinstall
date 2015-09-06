@@ -41,7 +41,6 @@ brew install caskroom/cask/brew-cask
 brew cask install appcleaner
 brew cask install atom
 brew cask install cheatsheet
-brew cask install cyberduck
 brew cask install java
 brew cask install intellij-idea
 brew cask install virtualbox
