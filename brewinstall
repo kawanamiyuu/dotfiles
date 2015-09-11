@@ -12,6 +12,8 @@ brew install hub
 brew install colordiff
 brew install terminal-notifier
 
+brew install gradle
+
 # peco
 brew install peco/peco
 
