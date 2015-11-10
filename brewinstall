@@ -34,6 +34,7 @@ brew install node
 
 # install brew-cask
 brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
 
 # R
 #cask install xquartz
@@ -52,6 +53,7 @@ brew cask install skitch
 brew cask install shiftit
 brew cask install slack
 
-brew cleanup
 brew cask cleanup
+brew cleanup
+
 
