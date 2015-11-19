@@ -47,7 +47,7 @@ plugins=(brew brew-cask git vagrant node npm bower composer heroku)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$(brew --prefix)/bin:/usr/local/bin:~/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
+export PATH=$(brew --prefix)/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH
 
 # ======================================================================
 # .bashrc で定義していたaliasやexportの設定をコピー
