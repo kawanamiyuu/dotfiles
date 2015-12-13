@@ -61,3 +61,6 @@ which "brew" > /dev/null
 if [ $? -eq 0 ]; then
   export PATH=$(brew --prefix)/bin:$PATH
 fi
+
+# added by travis gem
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
