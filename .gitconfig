@@ -25,8 +25,11 @@
   mg = merge
   tree = log --graph --date=short --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
   logg = log --stat --decorate=short --pretty=format:'%C(yellow)%h %Cgreen%cr %Cblue%cn%Cred%d %Creset%s %C(cyan)%b'
-  conflicts = !git ls-files -u | cut -f 2 | sort -u
+  clear = !git branch --merged | grep -v '*' | grep -v 'master' | xargs git branch -d
 
 [url "https://"]
   insteadOf = git://
-  
+
+[credential]
+  helper = osxkeychain
+
