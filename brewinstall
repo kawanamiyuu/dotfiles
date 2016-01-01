@@ -21,7 +21,7 @@ brew install peco/peco
 brew install heroku-toolbelt
 
 # PHP
-brew tap homebrew/homebrew-php
+brew tap homebrew/php
 brew install php55
 brew install php55-xdebug
 brew install phpunit
