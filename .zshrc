@@ -59,6 +59,14 @@ alias la='ls -la'
 alias diff='colordiff -b -w -B -u'
 alias du1='du -d 1'
 
+# git
+which "git" > /dev/null
+[ $? -eq 0 ] && alias g='git'
+
+# npm
+which "npm" > /dev/null
+[ $? -eq 0 ] && alias n='npm'
+
 # vim
 which "vim" > /dev/null
 if [ $? -eq 0 ]; then
