@@ -22,8 +22,11 @@ brew install heroku-toolbelt
 
 # PHP
 brew tap homebrew/php
-brew install php55
-brew install php55-xdebug
+brew install php70
+brew install php70-apcu
+brew install php70-opcache
+brew install php70-pdo-pgsql
+brew install php70-xdebug
 brew install phpunit
 brew install php-code-sniffer
 brew install php-cs-fixer
