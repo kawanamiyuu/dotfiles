@@ -91,10 +91,10 @@ if [ $? -eq 0 ]; then
   alias vahalt='vagrant halt; vagrant status'
   alias vahds='vagrant halt; vagrant destroy --force; vagrant status'
   alias vaprovision='vagrant provision'
-#  alias vasandbox='vagrant sandbox'
   alias vassh='vagrant ssh'
   alias vastatus='vagrant status'
   alias vaup='vagrant up'
+  alias vasuspend='vagrant suspend; vagrant status'
 fi
 
 # color setting
