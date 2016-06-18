@@ -42,7 +42,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew brew-cask git vagrant node npm bower composer heroku)
+plugins=(brew brew-cask git vagrant node npm golang bower composer heroku)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,10 +90,10 @@ if [ $? -eq 0 ]; then
   alias vadestroy='vagrant destroy --force; vagrant status'
   alias vahalt='vagrant halt; vagrant status'
   alias vahds='vagrant halt; vagrant destroy --force; vagrant status'
-  alias vaprovision='vagrant provision'
+  alias vaprovision='vagrant provision; vagrant status'
   alias vassh='vagrant ssh'
   alias vastatus='vagrant status'
-  alias vaup='vagrant up'
+  alias vaup='vagrant up; vagrant status'
   alias vasuspend='vagrant suspend; vagrant status'
 fi
 
