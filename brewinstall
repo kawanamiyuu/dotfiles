@@ -11,6 +11,7 @@ brew install tig
 brew install hub
 brew install colordiff
 brew install terminal-notifier
+brew install jq
 
 brew install gradle
 
