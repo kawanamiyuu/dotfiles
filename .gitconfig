@@ -13,6 +13,9 @@
   show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
   diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 
+[commit]
+  verbose = true
+
 [merge]
   ff = false
 
