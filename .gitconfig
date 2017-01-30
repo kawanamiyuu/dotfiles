@@ -22,7 +22,11 @@
 [alias]
   ba = branch -a
   st = status
+  sh = stash
+  sl = stash list
+  sp = stash pop
   co = checkout
+  cb = checkout -b
   cm = commit
   wip = !git stash && echo '----' && git commit --allow-empty -m '[ci skip] wip' && git push origin `git symbolic-ref --short HEAD` && echo '----' && git stash pop
   fh = fetch -p
