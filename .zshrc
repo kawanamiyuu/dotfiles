@@ -106,11 +106,8 @@ source ~/.zsh.d/zsh-notify/notify.plugin.zsh
 export SYS_NOTIFIER=$(brew --prefix)/bin/terminal-notifier
 export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
 
-# golang
-export GOPATH=$HOME/.go
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN
-
-
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
+
+# load zprofile
+source ~/.zprofile
