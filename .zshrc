@@ -102,9 +102,9 @@ fi
 #export LSCOLORS=gxfxcxdxbxegedabagacad
 
 # terminal-notifier & zsh-notify
-source ~/.zsh.d/zsh-notify/notify.plugin.zsh
-export SYS_NOTIFIER=$(brew --prefix)/bin/terminal-notifier
-export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
+#source ~/.zsh.d/zsh-notify/notify.plugin.zsh
+#export SYS_NOTIFIER=$(brew --prefix)/bin/terminal-notifier
+#export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
 
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
