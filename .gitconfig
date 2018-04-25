@@ -5,6 +5,9 @@
 #  GIT_COMMITTER_NAME
 #  GIT_COMMITTER_EMAIL
 
+[core]
+  excludesfile = ~/.gitignore_global
+
 [color]
   ui = auto
 
