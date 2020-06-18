@@ -34,14 +34,16 @@
   sp = stash pop
   co = checkout
   cb = checkout -b
+  cbo = "!f() { git cb $1 origin/${1}; }; f"
   cm = commit
-  wip = !git stash && echo '----' && git commit --allow-empty -m '[ci skip] wip' && git push origin `git symbolic-ref --short HEAD` && echo '----' && git stash pop
+  wip = !git commit --allow-empty -m '[ci skip] wip' && git push origin HEAD
   fh = fetch -p
   mg = merge
+  undo = reset --soft HEAD^
   tree = log --graph --date=short --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
-  logg = log --stat --decorate=short --pretty=format:'%C(yellow)%h %Cgreen%cr %Cblue%cn%Cred%d %Creset%s %C(cyan)%b'
-  clear = !git branch --merged | egrep -v '\\*|master|[0-9]+\\.x' | xargs git branch -d && echo '----' && git branch -a
-  sync = !git fetch -p && echo '----' && git checkout ${1} && echo '----' && git rebase origin/${1}
+  logg = log --stat --decorate=short --pretty='format:%C(yellow)%h %Cgreen%cr %Cblue%cn%Cred%d %Creset%s %C(cyan)%b'
+  clear = !git branch --merged | egrep -v 'master|(\\d+)\\.(\\d+)_' | xargs git branch -d && echo '----' && git branch
+  sync = !git fetch -p && git checkout $1 && git rebase origin/${1}
 
 [url "https://"]
   insteadOf = git://
