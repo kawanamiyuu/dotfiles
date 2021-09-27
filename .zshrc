@@ -57,6 +57,7 @@ export PATH=$(brew --prefix)/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/s
 alias ll='ls -l'
 alias la='ls -la'
 alias du1='du -d 1'
+alias diff='\diff -b -w -B -u'
 
 # diff
 which "colordiff" > /dev/null
