@@ -29,7 +29,7 @@ ZSH_THEME="steeef"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want to disable command autocorrection
-DISABLE_CORRECTION="true"
+# DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
@@ -42,7 +42,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vagrant node npm golang bower composer heroku)
+plugins=(git docker node npm yarn composer)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,58 +56,42 @@ export PATH=$(brew --prefix)/bin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/s
 # ======================================================================
 alias ll='ls -l'
 alias la='ls -la'
-alias diff='colordiff -b -w -B -u'
 alias du1='du -d 1'
 
-# git
-which "git" > /dev/null
-[ $? -eq 0 ] && alias g='git'
+# diff
+which "colordiff" > /dev/null
+if [ $? -eq 0 ]; then
+  alias diff='colordiff -b -w -B -u'
+fi
 
-# npm
-which "npm" > /dev/null
-[ $? -eq 0 ] && alias n='npm'
-
-# vim
+# vi
 which "vim" > /dev/null
 if [ $? -eq 0 ]; then
   alias vi='vim'
 fi
 
 # emacs
-which "emacs" > /dev/null
-if [ $? -eq 0 ]; then
-  alias wq='emacs'
-fi
-
-# Sublime Text for Mac
-if [ -f /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ]; then
-  alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-fi
+# which "emacs" > /dev/null
+# if [ $? -eq 0 ]; then
+#   alias wq='emacs'
+# fi
 
 # vagrant
-which "vagrant" > /dev/null
-if [ $? -eq 0 ]; then
-  alias vadestroy='vagrant destroy --force; vagrant status'
-  alias vahalt='vagrant halt; vagrant status'
-  alias vahds='vagrant halt; vagrant destroy --force; vagrant status'
-  alias vaprovision='vagrant provision; vagrant status'
-  alias vassh='vagrant ssh'
-  alias vastatus='vagrant status'
-  alias vaup='vagrant up; vagrant status'
-  alias vasuspend='vagrant suspend; vagrant status'
-fi
+# which "vagrant" > /dev/null
+# if [ $? -eq 0 ]; then
+#   alias vadestroy='vagrant destroy --force; vagrant status'
+#   alias vahalt='vagrant halt; vagrant status'
+#   alias vahds='vagrant halt; vagrant destroy --force; vagrant status'
+#   alias vaprovision='vagrant provision; vagrant status'
+#   alias vassh='vagrant ssh'
+#   alias vastatus='vagrant status'
+#   alias vaup='vagrant up; vagrant status'
+#   alias vasuspend='vagrant suspend; vagrant status'
+# fi
 
 # color setting
-#export CLICOLOR=1
-#export LSCOLORS=gxfxcxdxbxegedabagacad
-
-# terminal-notifier & zsh-notify
-#source ~/.zsh.d/zsh-notify/notify.plugin.zsh
-#export SYS_NOTIFIER=$(brew --prefix)/bin/terminal-notifier
-#export NOTIFY_COMMAND_COMPLETE_TIMEOUT=10
-
-# added by travis gem
-[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
+# export CLICOLOR=1
+# export LSCOLORS=gxfxcxdxbxegedabagacad
 
 # load zprofile
 source ~/.zprofile
