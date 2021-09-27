@@ -18,7 +18,7 @@
   diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 
 [commit]
-  verbose = true
+#  verbose = true
 
 [merge]
   ff = false
@@ -42,8 +42,9 @@
   undo = reset --soft HEAD^
   tree = log --graph --date=short --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
   logg = log --stat --decorate=short --pretty='format:%C(yellow)%h %Cgreen%cr %Cblue%cn%Cred%d %Creset%s %C(cyan)%b'
-  clear = !git branch --merged | egrep -v 'master|(\\d+)\\.(\\d+)_' | xargs git branch -d && echo '----' && git branch
+  clear = !git branch --merged | egrep -v 'master|main|(\\d+)\\.(\\d+)' | xargs git branch -d && echo '----' && git branch
   sync = !git fetch -p && git checkout $1 && git rebase origin/${1}
+  review = "!f() { git fh && git cb REVIEW/${1} origin/${1}; }; f"
 
 [url "https://"]
   insteadOf = git://
